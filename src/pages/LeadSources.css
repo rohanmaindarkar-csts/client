@@ -1,0 +1,30 @@
+/* LeadSources.css */
+
+.lead-sources-page {
+  width: 100%;
+}
+
+.lead-sources-content {
+  min-height: 350px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.lead-sources-content h3 {
+  font-size: 15px;
+  color: #334155;
+  margin: 14px 0 6px;
+}
+
+.lead-sources-content p {
+  font-size: 13px;
+  margin: 0;
+}

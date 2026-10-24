@@ -1,0 +1,43 @@
+:root {
+  --primary: #2563eb;
+  --primary-light: #eff6ff;
+  --background: #f5f7fa;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+
+  --sidebar-width: 256px;
+  --sidebar-collapsed-width: 72px;
+  --header-height: 68px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: Inter, Arial, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

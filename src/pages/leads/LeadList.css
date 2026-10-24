@@ -1,0 +1,32 @@
+.lead-list-page {
+  width: 100%;
+}
+
+.lead-list-content {
+  min-height: 300px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.lead-list-empty {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.lead-list-empty h3 {
+  margin: 14px 0 6px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.lead-list-empty p {
+  margin: 0;
+  font-size: 13px;
+}
