@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 const axiosInstance = axios.create({
@@ -17,16 +16,20 @@ axiosInstance.interceptors.request.use(
       config.headers.Authorization = `Bearer ${token}`;
     }
 
+    if (config.data instanceof FormData) {
+      config.headers.setContentType(undefined);
+    }
+
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 export default axiosInstance;

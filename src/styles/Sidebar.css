@@ -290,3 +290,135 @@
     font-size: 10px;
   }
 }
+
+/* =====================================
+   FINAL DARK PURPLE SIDEBAR THEME
+===================================== */
+
+/* Main sidebar background */
+aside.sidebar,
+aside.sidebar.collapsed,
+aside.sidebar.mobile-open {
+  background-color: #241638;
+  border-right-color: #3e2b50;
+}
+
+/* Brand */
+aside.sidebar .sidebar-brand {
+  background-color: #241638;
+  border-bottom-color: #3e2b50;
+}
+
+aside.sidebar .brand-logo {
+  background-color: #c9a45c;
+  color: #241638;
+}
+
+aside.sidebar .brand-logo:hover {
+  background-color: #e0bc74;
+}
+
+aside.sidebar .brand-text strong {
+  color: #ffffff;
+}
+
+aside.sidebar .brand-text span {
+  color: #b9aac8;
+}
+
+aside.sidebar .sidebar-toggle-btn,
+aside.sidebar .sidebar-mobile-close {
+  color: #c8b9d7;
+}
+
+aside.sidebar .sidebar-toggle-btn:hover,
+aside.sidebar .sidebar-mobile-close:hover {
+  background-color: #453154;
+  color: #f4d58d;
+}
+
+/* Navigation area */
+aside.sidebar .sidebar-content {
+  background-color: #241638;
+}
+
+aside.sidebar .sidebar-section-label {
+  color: #9f8aaf;
+}
+
+aside.sidebar .nav-item {
+  background-color: transparent;
+  color: #d4c8df;
+}
+
+aside.sidebar .nav-item:hover {
+  background-color: #352445;
+  color: #ffffff;
+}
+
+aside.sidebar .nav-item.active {
+  background-color: #453154;
+  color: #f4d58d;
+  font-weight: 600;
+}
+
+aside.sidebar .nav-item.parent-active {
+  background-color: transparent;
+  color: #e6c57b;
+}
+
+aside.sidebar .nav-item.parent-active:hover {
+  background-color: #352445;
+}
+
+aside.sidebar .nav-chevron {
+  color: #b9aac8;
+}
+
+/* Submenu */
+aside.sidebar .submenu {
+  border-left-color: #59466a;
+}
+
+aside.sidebar .submenu .submenu-item {
+  background-color: transparent;
+  color: #d4c8df;
+}
+
+aside.sidebar .submenu .submenu-item:hover {
+  background-color: #352445;
+  color: #ffffff;
+}
+
+aside.sidebar .submenu .submenu-item.active {
+  background-color: #453154;
+  color: #f4d58d;
+}
+
+/* Footer */
+aside.sidebar .sidebar-footer {
+  background-color: #241638;
+  border-top-color: #3e2b50;
+}
+
+aside.sidebar .sidebar-version {
+  color: #9f8aaf;
+}
+
+/* Collapsed: logo only */
+aside.sidebar.collapsed .sidebar-brand {
+  justify-content: center;
+  padding: 0;
+}
+
+aside.sidebar.collapsed .sidebar-toggle-btn {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  aside.sidebar.collapsed .sidebar-brand {
+    justify-content: flex-start;
+    padding: 0 14px;
+  }
+}
