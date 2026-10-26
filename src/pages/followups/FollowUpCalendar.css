@@ -1,0 +1,327 @@
+.followup-calendar-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.fuc-panel,
+.fuc-selected-panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.fuc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fuc-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fuc-navigation h2 {
+  font-size: 15px;
+  color: #1e293b;
+  margin: 0 12px;
+  font-weight: 650;
+  min-width: 145px;
+  text-align: center;
+}
+
+.fuc-view-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  background: #f8fafc;
+}
+
+.fuc-view-switch button {
+  padding: 8px 17px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #64748b;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.fuc-view-switch button.active {
+  color: #fff;
+  background: #c2912d;
+  font-weight: 600;
+}
+
+.fuc-scroll {
+  overflow-x: auto;
+}
+
+.fuc-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  min-width: 650px;
+  border-left: 1px solid #e2e8f0;
+}
+
+.fuc-grid.fuc-day-view {
+  grid-template-columns: 1fr;
+  min-width: 0;
+}
+
+.fuc-weekday {
+  padding: 13px 8px;
+  text-align: center;
+  background: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.fuc-date,
+.fuc-empty-day {
+  min-height: 112px;
+  padding: 10px;
+  border: 0;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.fuc-date {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.fuc-date:hover {
+  background: #fafaf9;
+}
+
+.fuc-date.selected {
+  background: #fffbeb;
+  box-shadow: inset 0 0 0 2px #c2912d;
+}
+
+.fuc-date-number {
+  display: inline-flex;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fuc-date.today .fuc-date-number {
+  background: #c2912d;
+  color: #fff;
+}
+
+.fuc-events {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fuc-event {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 10px;
+  color: #475569;
+}
+
+.fuc-event > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fuc-events small {
+  color: #94a3b8;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.fuc-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #2563eb;
+}
+
+.fuc-dot.scheduled {
+  background: #2563eb;
+}
+
+.fuc-dot.completed {
+  background: #10b981;
+}
+
+.fuc-dot.pending {
+  background: #f97316;
+}
+
+.fuc-dot.overdue {
+  background: #ef4444;
+}
+
+.fuc-dot.rescheduled {
+  background: #0ea5e9;
+}
+
+.fuc-dot.cancelled {
+  background: #94a3b8;
+}
+
+.fuc-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 17px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.fuc-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.fuc-selected-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fuc-selected-heading h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.fuc-selected-heading p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.fuc-selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.fuc-selected-item strong {
+  color: #334155;
+  font-size: 12px;
+}
+
+.fuc-selected-item p {
+  color: #94a3b8;
+  font-size: 11px;
+  margin: 5px 0 0;
+}
+
+.fuc-status {
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.fuc-status.pending {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.fuc-status.completed {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.fuc-status.overdue {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.fuc-status.rescheduled {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.fuc-no-data {
+  padding: 35px 15px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.fuc-day-view .fuc-date {
+  min-height: 140px;
+}
+
+@media (max-width: 600px) {
+  .fuc-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fuc-navigation {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fuc-navigation h2 {
+    min-width: 115px;
+    font-size: 13px;
+    margin: 0 4px;
+  }
+
+  .fuc-view-switch {
+    display: flex;
+  }
+
+  .fuc-view-switch button {
+    flex: 1;
+  }
+
+  .fuc-date,
+  .fuc-empty-day {
+    min-height: 90px;
+    padding: 6px;
+  }
+
+  .fuc-legend {
+    gap: 12px;
+  }
+}

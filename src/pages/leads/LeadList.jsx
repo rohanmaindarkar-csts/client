@@ -383,7 +383,8 @@ export default function LeadList() {
                 <th>Interested Plan</th>
                 <th>Priority</th>
                 <th>Assigned Staff</th>
-                <th>Created</th>
+                <th>Next Follow-Up</th>
+                {/* <th>Created</th> */}
                 <th className="lead-actions-column">Actions</th>
               </tr>
             </thead>
@@ -413,6 +414,8 @@ export default function LeadList() {
               ) : (
                 leads.map((lead) => (
                   <tr key={lead._id}>
+                    {/* <pre>{JSON.stringify(lead, null, 2)}</pre> */}
+
                     <td>
                       <span className="lead-business-name">
                         {lead.businessName || "—"}
@@ -442,7 +445,8 @@ export default function LeadList() {
                         : "Unassigned"}
                     </td>
 
-                    <td>{formatDate(lead.createdAt)}</td>
+                    {/* <td>{formatDate(lead.createdAt)}</td> */}
+                    <td>{formatDate(lead.nextFollowUpDateTime)}</td>
 
                     <td className="lead-actions-column">
                       <div className="lead-row-actions">

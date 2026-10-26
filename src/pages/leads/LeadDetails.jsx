@@ -138,6 +138,7 @@ export default function LeadDetails({ lead }) {
         <Detail label="Interested Plan" value={lead.interestedPlan} />
         <Detail label="Assigned Staff" value={staffName(lead.assignStaff)} />
         <Detail label="Lead Priority" value={lead.leadPriority} />
+        <Detail label="Lead Status" value={lead.leadStatus || "New"} />
         <Detail label="Estimated Value" value={money(lead.estimatedValue)} />
       </Section>
 

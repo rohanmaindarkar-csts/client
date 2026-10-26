@@ -6,12 +6,14 @@ import Dashboard from "../pages/Dashboard";
 import LeadList from "../pages/leads/LeadList";
 // import AddLead from "../pages/leads/AddLead";
 import LeadForm from "../pages/leads/LeadForm";
-import FollowUps from "../pages/FollowUps";
-import Assignments from "../pages/Assignments";
+import Assignments from "../pages/assignments/Assignments";
+import FollowUps from "../pages/followups/FollowUps";
 import AuditLogs from "../pages/AuditLogs";
 import Reports from "../pages/Reports";
 import LeadSources from "../pages/LeadSources";
+import FollowUpCalendar from "../pages/followups/FollowUpCalendar";
 
+import LeadDashboard from "../pages/leadDashboard/LeadDashboard";
 export default function AppRoutes() {
   return (
     <Routes>
@@ -27,7 +29,8 @@ export default function AppRoutes() {
         <Route path="/leads/edit/:id" element={<LeadForm />} />
 
         <Route path="/follow-ups" element={<FollowUps />} />
-
+        <Route path="/follow-ups/calendar" element={<FollowUpCalendar />} />
+        <Route path="/lead-dashboard" element={<LeadDashboard />} />
         <Route path="/assignments" element={<Assignments />} />
 
         <Route path="/audit-logs" element={<AuditLogs />} />

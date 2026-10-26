@@ -295,7 +295,7 @@
    FINAL DARK PURPLE SIDEBAR THEME
 ===================================== */
 
-/* Main sidebar background */
+/* 
 aside.sidebar,
 aside.sidebar.collapsed,
 aside.sidebar.mobile-open {
@@ -303,7 +303,7 @@ aside.sidebar.mobile-open {
   border-right-color: #3e2b50;
 }
 
-/* Brand */
+
 aside.sidebar .sidebar-brand {
   background-color: #241638;
   border-bottom-color: #3e2b50;
@@ -337,7 +337,7 @@ aside.sidebar .sidebar-mobile-close:hover {
   color: #f4d58d;
 }
 
-/* Navigation area */
+
 aside.sidebar .sidebar-content {
   background-color: #241638;
 }
@@ -375,7 +375,7 @@ aside.sidebar .nav-chevron {
   color: #b9aac8;
 }
 
-/* Submenu */
+
 aside.sidebar .submenu {
   border-left-color: #59466a;
 }
@@ -395,7 +395,7 @@ aside.sidebar .submenu .submenu-item.active {
   color: #f4d58d;
 }
 
-/* Footer */
+
 aside.sidebar .sidebar-footer {
   background-color: #241638;
   border-top-color: #3e2b50;
@@ -405,7 +405,7 @@ aside.sidebar .sidebar-version {
   color: #9f8aaf;
 }
 
-/* Collapsed: logo only */
+
 aside.sidebar.collapsed .sidebar-brand {
   justify-content: center;
   padding: 0;
@@ -415,10 +415,10 @@ aside.sidebar.collapsed .sidebar-toggle-btn {
   display: none;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   aside.sidebar.collapsed .sidebar-brand {
     justify-content: flex-start;
     padding: 0 14px;
   }
-}
+} */

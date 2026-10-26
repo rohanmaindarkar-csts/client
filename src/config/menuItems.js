@@ -21,6 +21,11 @@ export const menuItems = [
     icon: Users,
     children: [
       {
+        label: "Lead Dashboard",
+        path: "/lead-dashboard",
+        icon: LayoutDashboard,
+      },
+      {
         label: "All Leads",
         icon: List,
         path: "/leads",

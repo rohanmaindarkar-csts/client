@@ -17,6 +17,17 @@ export const leadSources = [
   "Other",
 ];
 
+export const leadStatuses = [
+  "New",
+  "Contacted",
+  "Qualified",
+  "Demo Scheduled",
+  "Negotiation",
+  "Converted",
+  "Lost",
+  "On Hold",
+];
+
 export const leadPriorities = ["Low", "Medium", "High", "Urgent"];
 
 export const initialLeadForm = {
@@ -38,6 +49,7 @@ export const initialLeadForm = {
   interestedPlan: "",
   assignStaff: "",
   leadPriority: "Medium",
+  leadStatus: "New", // NEW FIELD
   expectedPurchaseDate: "",
   estimatedValue: "",
   remarks: "",
